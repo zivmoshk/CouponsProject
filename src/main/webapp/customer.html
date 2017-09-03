@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Customer Page</title>
+<link rel="stylesheet" type="text/css" href="css/Style.css">
+<script src="angular/angular.min.js"></script>
+<!--  <script type="text/javascript" src="customerController.js"></script>-->
+
+</head>
+<div ng-app="couponSystem">
+
+	<body >
+		<header class="header">
+			<h1>Hello {{custName}}, Welcome to your personal page</h1>
+			<hr />
+		</header>
+			<div style="text-align:center;">
+		<button type="button" onclick="purchasecoupon()">Purchase Coupon</button>
+		</br>
+		<button type="button" onclick="getallpurchasedcoupons()">Get All Purchased Coupons</button>
+		</br>
+		<button type="button" onclick="getallpurchasecouponsbytype()">Get All Purchase Coupons By Type</button>
+		</br>
+		<button type="button" onclick="getallpurchasecouponsbyprice()">Get All Purchase Coupons By Price</button>
+		</br>
+			</div>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Coupon System Login</title>
+		<link rel="stylesheet" type="text/css" href="css/Style.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+<body >
+	<header class="header">
+		<h1 >Welcome to the Coupons Management System</h1><hr/>
+	</header>
+
+	<div class="login">
+	<h1>Please fill your name and password:</h1>
+    <form  action="login" method="post">
+    	
+    	<label for="name"><h2>Name:</h2></label>
+    	<input type="text" id="name" name="username" placeholder="Enter Your Name" required="required" />
+    	
+    	<label for="passwors"><h2>Password:</h2></label>
+        <input type="password" id="password" name="password" placeholder="Enter Your Password" required="required" />
+        
+        <label for="type"><h2>choose your Client Type:</h2></label>
+		    <select id="type" name="type">
+		        <option value="ADMIN">Admin</option>
+				<option value="COMPANY">Company</option>
+				<option value="CUSTOMER">Customer</option>
+		    </select>
+        
+        <button type="submit"  class="btn btn-primary btn-block btn-large">Login</button>
+    </form>
+</div>
+</body>
+</html>

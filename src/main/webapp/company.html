@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Company Page</title>
+	<link rel="stylesheet" type="text/css" href="css/Style.css">
+	<script src="angular/angular.min.js"></script>
+	<script type="text/javascript" src="companyController.js"></script>
+
+</head>
+	<div ng-app="couponSystem">
+		
+<body >
+		<header class="header">
+			<h1>Hello {{compName}}, Welcome to your personal page </h1>
+			<hr />
+		</header>
+		<table style="text-align:center;">
+		<tr>
+		<td><button type="button" onclick="createCoupon()">Create Coupon</button></td>
+		<td><button type="button" onclick="removeCoupon()">Remove Coupon</button></td>
+		<td><button type="button" onclick="updateCoupon()">Update Coupon</button></td>
+		</tr>
+		<tr>
+		<td><button type="button" onclick="gatAllCoupons()">Get All Coupons</button></td>
+		<td><button type="button" onclick="gatAllCouponsById()">Get All Coupons by ID</button></td>
+		<td><button type="button" onclick="gatAllCouponsByType()">Get All Coupons by Type</button></td>	
+		</tr>
+	</table>
+	</div>
+</body>
+</html>
